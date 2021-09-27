@@ -5,15 +5,15 @@ import (
 	"log"
 	"net"
 
-	usr "github.com/brandomillerio/nuboverflow_users/internal/user"
 	user "github.com/brandonmillerio/bmio_protos/nuboverflow/user/v1"
+	usr "github.com/brandonmillerio/nuboverflow_users/repository/user"
 	"google.golang.org/grpc"
 )
 
 type UserService interface {
 	GetUserByID(ctx context.Context, id string) (usr.User, error);
-	CreateUser(ctx context.Context, usr usr.User) (usr.User, error);
-	UpdateUser(ctx context.Context, usr usr.User) (usr.User, error);
+	CreateUser(ctx context.Context, user usr.User) (usr.User, error);
+	UpdateUser(ctx context.Context, user usr.User) (usr.User, error);
 	DeleteUser(ctx context.Context, id string) error;
 }
 

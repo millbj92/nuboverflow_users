@@ -3,13 +3,13 @@ module github.com/brandonmillerio/nuboverflow_users
 go 1.17
 
 require (
-	github.com/brandonmillerio/bmio_protos v0.0.0-20210927210713-b87f9b470a4d
+	github.com/brandonmillerio/bmio_protos/nuboverflow v0.0.0-20210927213542-e0142deecb4c
 	github.com/golang-migrate/migrate/v4 v4.15.0
 	github.com/golang/mock v1.6.0
 	github.com/jmoiron/sqlx v1.3.4
 	github.com/lib/pq v1.10.0
 	github.com/stretchr/testify v1.7.0
-	google.golang.org/grpc v1.39.0
+	google.golang.org/grpc v1.41.0
 )
 
 require (

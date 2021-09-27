@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 
-	"github.com/brandomillerio/nuboverflow_users/internal/db"
-	"github.com/brandomillerio/nuboverflow_users/internal/user"
+	"github.com/brandonmillerio/nuboverflow_users/repository/db"
+	"github.com/brandonmillerio/nuboverflow_users/repository/user"
 )
 
 func Run() error {
