@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/brandomillerio/nuboverflow_users/internal/rocket"
+	"github.com/brandomillerio/nuboverflow_users/internal/user"
 	"github.com/jmoiron/sqlx"
 )
 
@@ -39,14 +39,18 @@ func New() (Store, error) {
 	}, nil
 }
 
-func (s Store) GetRocketByID(id string) (rocket.Rocket, error) {
-	return rocket.Rocket{}, nil
+func (s Store) GetUserByID(id string) (user.User, error) {
+	return user.User{}, nil
 }
 
-func (s Store) InsertRocket(rkt rocket.Rocket) (rocket.Rocket, error) {
-	return rocket.Rocket{}, nil
+func (s Store) CreateUser(user user.User) (user.User, error) {
+	return user, nil
 }
 
-func (s Store) DeleteRocket(id string) error {
+func (s Store) DeleteUser(id string) error {
 	return nil
+}
+
+func (s Store) UpdateUser(user user.User) (user.User, error) {
+	return user, nil
 }

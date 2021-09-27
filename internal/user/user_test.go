@@ -64,7 +64,7 @@ func TestUserService(t *testing.T) {
 			Return(nil)
 
 		userService := New(userStoreMock)
-		err := userService.DeleteUser(id)
+		err := userService.DeleteUser(context.Background(), id)
 		assert.NoError(t, err)
 	})
 }

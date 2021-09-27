@@ -4,21 +4,21 @@ import (
 	"log"
 
 	"github.com/brandomillerio/nuboverflow_users/internal/db"
-	"github.com/brandomillerio/nuboverflow_users/internal/rocket"
+	"github.com/brandomillerio/nuboverflow_users/internal/user"
 )
 
 func Run() error {
 	//Responsible for initializing and starting the gRPC server.
-	rocketStore, err := db.New()
+	userStore, err := db.New()
 	if err != nil {
 		return err
 	}
-	err = rocketStore.Migrate()
+	err = userStore.Migrate()
 	if err != nil {
 		log.Println("Failed to run migrations")
 		return err
 	}
-	_ = rocket.New(rocketStore)
+	_ = user.New(userStore)
 
 	return nil
 }

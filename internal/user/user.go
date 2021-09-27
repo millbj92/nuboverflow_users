@@ -56,11 +56,11 @@ func New(store Store) Service {
 }
 
 func (s Service) GetUserByID(ctx context.Context, id string) (User, error) {
-	user, err := s.Store.GetUserByID(id)
+	usr, err := s.Store.GetUserByID(id)
 	if err != nil {
 		return User{}, err
 	}
-	return user, nil
+	return usr, nil
 }
 
 func (s Service) CreateUser(ctx context.Context, user User) (User, error) {
@@ -71,7 +71,15 @@ func (s Service) CreateUser(ctx context.Context, user User) (User, error) {
 	return user, nil
 }
 
-func (s Service) DeleteUser(id string) error {
+func (s Service) UpdateUser(ctx context.Context, user User) (User, error) {
+	user, err := s.Store.UpdateUser(user)
+	if err != nil {
+		return User{}, err
+	}
+	return user, nil
+}
+
+func (s Service) DeleteUser(ctx context.Context, id string) error {
 	err := s.Store.DeleteUser(id)
 	if err != nil {
 		return err
