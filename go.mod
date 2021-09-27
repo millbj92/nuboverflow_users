@@ -1,4 +1,4 @@
-module github.com/brandomillerio/nuboverflow_users
+module github.com/brandonmillerio/nuboverflow_users
 
 go 1.17
 
