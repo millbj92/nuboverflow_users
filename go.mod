@@ -1,4 +1,4 @@
-module github.com/brandomillerio/bmio_protos/nuboverflow
+module github.com/brandomillerio/nuboverflow_users
 
 go 1.17
 
