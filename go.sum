@@ -89,8 +89,8 @@ github.com/aws/smithy-go v1.4.0/go.mod h1:SObp3lf9smib00L/v3U2eAKG8FyQ7iLrJnQiAm
 github.com/bitly/go-hostpool v0.0.0-20171023180738-a3a6125de932/go.mod h1:NOuUCSz6Q9T7+igc/hlvDOUdtWKryOrtFyIVABv/p7k=
 github.com/bkaradzic/go-lz4 v1.0.0/go.mod h1:0YdlkowM3VswSROI7qDxhRvJ3sLhlFrRRwjwegp5jy4=
 github.com/bmizerany/assert v0.0.0-20160611221934-b7ed37b82869/go.mod h1:Ekp36dRnpXw/yCqJaO+ZrUyxD+3VXMFFr56k5XYrpB4=
-github.com/brandonmillerio/bmio_protos/nuboverflow v0.0.0-20210927213542-e0142deecb4c h1:Uyz6wJkI7KpzTyak56zhljQHU4q6VgXtTw4EVHICR+Y=
-github.com/brandonmillerio/bmio_protos/nuboverflow v0.0.0-20210927213542-e0142deecb4c/go.mod h1:NaRDdf2dsu13yUBoitCRlQqreNLUquggkLA/58Fhqbg=
+github.com/brandonmillerio/bmio_protos/nuboverflow v0.0.0-20210927235938-b0fc6424ad8a h1:CxMlDWJm2u/5TMOCdchA+gcc0cGt5PHxOOKOesC2fMg=
+github.com/brandonmillerio/bmio_protos/nuboverflow v0.0.0-20210927235938-b0fc6424ad8a/go.mod h1:NaRDdf2dsu13yUBoitCRlQqreNLUquggkLA/58Fhqbg=
 github.com/cenkalti/backoff/v4 v4.0.2/go.mod h1:eEew/i+1Q6OrCDZh3WiXYv3+nJwBASZ8Bog/87DQnVg=
 github.com/census-instrumentation/opencensus-proto v0.2.1/go.mod h1:f6KPmirojxKA12rnyqOA5BBL4O983OfeGPqjHWSTneU=
 github.com/cespare/xxhash/v2 v2.1.1/go.mod h1:VGX0DQ3Q6kWi7AoAeZDth3/j3BFtOZR5XLFGgcrjCOs=

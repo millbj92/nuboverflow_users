@@ -3,8 +3,9 @@ package main
 import (
 	"log"
 
-	"github.com/brandonmillerio/nuboverflow_users/repository/db"
-	"github.com/brandonmillerio/nuboverflow_users/repository/user"
+	"github.com/brandonmillerio/nuboverflow_users/internal/db"
+	"github.com/brandonmillerio/nuboverflow_users/internal/transport/grpc"
+	"github.com/brandonmillerio/nuboverflow_users/internal/user"
 )
 
 func Run() error {
@@ -18,7 +19,14 @@ func Run() error {
 		log.Println("Failed to run migrations")
 		return err
 	}
-	_ = user.New(userStore)
+	
+	usrService := user.New(userStore)
+	usrHandler := grpc.New(usrService)
+
+
+    if err := usrHandler.Serve(); err != nil {
+		return err
+	}
 
 	return nil
 }

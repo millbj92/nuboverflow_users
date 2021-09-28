@@ -3,7 +3,7 @@ module github.com/brandonmillerio/nuboverflow_users
 go 1.17
 
 require (
-	github.com/brandonmillerio/bmio_protos/nuboverflow v0.0.0-20210927213542-e0142deecb4c
+	github.com/brandonmillerio/bmio_protos/nuboverflow v0.0.0-20210927235938-b0fc6424ad8a
 	github.com/golang-migrate/migrate/v4 v4.15.0
 	github.com/golang/mock v1.6.0
 	github.com/jmoiron/sqlx v1.3.4

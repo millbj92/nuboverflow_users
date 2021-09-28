@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/brandonmillerio/nuboverflow_users/repository/user"
+	"github.com/brandonmillerio/nuboverflow_users/internal/user"
 	"github.com/jmoiron/sqlx"
 )
 
